@@ -1,0 +1,2000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A Wife for a Moneth</title>
+            <author>John Fletcher</author>
+            <respStmt>
+               <resp>Editor</resp>
+               <persName xml:id="LMC">Lauren Cenci</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Annotator(s)</resp>
+               <name xml:id="formerOwner">Former Owner - Author of Handwritten Annotations</name>
+            </respStmt>
+            <respStmt>
+               <resp>Base text established by:</resp>
+               <persName>Taylor Hare</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Text validated by:</resp>
+               <persName>David LeBlanc</persName>
+               <persName>John Russell</persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>The Pennsylvania State University</publisher>
+            <pubPlace>University Park, PA</pubPlace>
+         </publicationStmt>
+         <seriesStmt>
+            <title>The Digital Beaumont and Fletcher (1647)</title>
+            <editor>Claire M.L. Bourne</editor>
+         </seriesStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <author>Francis Beaumont</author>
+                  <author>John Fletcher</author>
+                  <title>Comedies and Tragedies Written by Francis Beavmont and Iohn Fletcher,
+                     Gentlemen. Never printed before, And now published by the Authours Originall
+                     Copies.</title>
+                  <imprint>
+                     <publisher>Humphrey Robinson</publisher>
+                     <pubPlace>the three Pidgeons</pubPlace>
+                     <publisher>Humphrey Moseley</publisher>
+                     <pubPlace>The Princes Armes in St. Pauls Church-yard</pubPlace>
+                     <date>1647</date>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <div type="cast_list">
+            <head>Persons Represented in the Play</head>
+            <castList>
+               <castGroup n="1">
+                  <castItem>
+                     <role xml:id="fred">Frederick</role>
+                     <roleDesc>unnatural and libidinous brother to Alphonso, and usurper of his
+                        kingdom.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="sor">Sorano</role>
+                     <roleDesc>a lord, brother to Evanthe, Frederick’s wicked instrument.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="pod">Podrano</role>
+                     <roleDesc>a necessary creature to Sorano.</roleDesc>
+                  </castItem>
+               </castGroup>
+               <castGroup n="2">
+                  <castItem>
+                     <role xml:id="eva">Evanthe</role>
+                     <roleDesc>sister to Sorano, the chaste wife of Valerio, or a Wife for a
+                        Month.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="queen">Queen</role>
+                     <roleDesc>wife to Frederick, a virtuous Lady.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="val">Valerio</role>
+                     <roleDesc>a noble young Lord, servant to Evanthe.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="cass">Cassandra</role>
+                     <roleDesc>an old bawd, waiting-woman to Evanthe.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="ladies">Ladies.</role>
+                     <roleDesc/>
+                  </castItem>
+               </castGroup>
+               <castGroup n="3">
+                  <castItem>
+                     <role xml:id="cam">Camillo</role>
+                     <roleDesc>an honest court lord.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="cle">Cleanthe</role>
+                     <roleDesc>an honest court lord.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="men">Menallo</role>
+                     <roleDesc>an honest court lord.</roleDesc>
+                  </castItem>
+               </castGroup>
+               <castGroup n="4">
+                  <castItem>
+                     <role xml:id="fool">Tony</role>
+                     <roleDesc>King Frederick’s knavish fool.</roleDesc>
+                  </castItem>
+               </castGroup>
+               <castGroup n="5" xml:id="citizens">
+                  <castItem>
+                     <role xml:id="citi">Citizens.</role>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="wives">City-Wives.</role>
+                  </castItem>
+               </castGroup>
+               <castGroup n="6" xml:id="masquers">
+                  <castItem>
+                     <role xml:id="cup">Cupid.</role>
+                  </castItem>
+                  <castItem>
+                     <role>Graces.</role>
+                  </castItem>
+                  <castItem>
+                     <role>Other masquers.</role>
+                  </castItem>
+               </castGroup>
+               <castGroup n="7">
+                  <castItem>
+                     <role xml:id="alph">Alphonso</role>
+                     <roleDesc>King of Naples, elder brother to Frederick.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="rug">Rugio</role>
+                     <roleDesc>an honest lord, friend to Alphonso.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="mar">Marco</role>
+                     <roleDesc>a friar, Alphonso’s friend.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="friars">Friars.</role>
+                  </castItem>
+               </castGroup>
+               <castGroup n="8" xml:id="suitors">
+                  <castItem>
+                     <role xml:id="lawyer">Lawyer</role>
+                     <roleDesc>suitor to Evanthe.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="doc">Physician</role>
+                     <roleDesc>suitor to Evanthe.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="capt">Captain</role>
+                     <roleDesc>suitor to Evanthe.</roleDesc>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="cut">Cut-purse</role>
+                     <roleDesc>suitor to Evanthe.</roleDesc>
+                  </castItem>
+               </castGroup>
+               <castGroup n="9">
+                  <castItem>
+                     <role xml:id="cast">Castruchio</role>
+                     <roleDesc>captain of the citadel, an honest man.</roleDesc>
+                  </castItem>
+               </castGroup>
+               <castGroup n="10" xml:id="others">
+                  <castItem>
+                     <role xml:id="attendants">Attendants</role>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="servants">Servants</role>
+                  </castItem>
+                  <castItem>
+                     <role xml:id="guard">Guard</role>
+                  </castItem>
+               </castGroup>
+            </castList>
+         </div>
+      </front>
+      <body>
+         <div type="act" n="1">
+            <div type="scene" n="1">
+               <fw type="pageNum">47</fw>
+               <head><corr resp="#LMC">Act 1, Scene 1</corr>.</head>
+               <cb n="1"/>
+               <stage type="entrance" place="center"
+                  who="#fred #sor #val #cam #cle #men #attendants">Enter King Frederick, Sorano,
+                  Valerio, Camillo, Cleanthes, Menallo, and Attendants.</stage>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l><corr resp="#LMC"><hi rend="ornInit">W</hi>ill</corr> your Grace speak?</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Let me alone<corr resp="#LMC"><pc type="comma">,</pc></corr>
+                        <hi rend="italic"><persName>Sorano</persName></hi>,</l>
+                     <l>Although my thoughts <corr resp="#LMC">seem</corr> sad, they <lb
+                           rend="indent"/>are welcome to me.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>You know I am private as your <lb rend="indent"/>secret wishes,</l>
+                     <l>Ready to fling my <corr resp="#LMC">soul</corr> upon your service,</l>
+                     <l>Ere <!-- what to do with "Ere"? --> your command be on't.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Bid those depart.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>You must retire<corr resp="#LMC"><pc type="comma">,</pc></corr> my
+                        Lords.</l>
+                  </lg>
+               </sp>
+               <sp who="#cam">
+                  <speaker>Camillo</speaker>
+                  <lg>
+                     <l>What new design is hammering in his head now?</l>
+                  </lg>
+               </sp>
+               <sp who="#cle">
+                  <speaker>Cleanthes</speaker>
+                  <lg>
+                     <l>Let<corr resp="#LMC"><pc type="apostrophe">'</pc></corr>s pray heartily</l>
+                     <l>None of our heads meet with it, my wife's old,</l>
+                     <l>That's all my comfort.</l>
+                  </lg>
+               </sp>
+               <sp who="#men">
+                  <speaker>Menallo</speaker>
+                  <lg>
+                     <l>Mine's ugly, that I am sure <corr resp="#LMC">of</corr>,</l>
+                     <l>And I think honest<note resp="#LMC" type="gloss">chaste; virginal <bibl>OED honest adj.3b</bibl></note> too, 'twould make me start else.</l>
+                  </lg>
+               </sp>
+               <sp who="#cam">
+                  <speaker>Camillo</speaker>
+                  <lg>
+                     <l>Mine's troubled in the <corr resp="#LMC">country</corr> with a <corr
+                           resp="#LMC">fever</corr>,</l>
+                     <l>And some few infirmities else; he looks againe<corr resp="#LMC"><pc
+                              type="period">.</pc>,</corr></l>
+                     <l>Come<corr resp="#LMC"><pc type="comma">,</pc></corr>
+                        <corr resp="#LMC">let's</corr> retire<corr><pc type="period">.</pc></corr>
+                        <corr resp="#LMC">Certain</corr> 'tis some she <corr resp="#LMC"
+                           >business</corr>,</l>
+                     <l>This new Lord is <corr resp="#LMC">employed</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#val">
+                  <speaker>Valerio</speaker>
+                  <lg>
+                     <l><corr resp="#LMC">I'll</corr> not be far off, because I doubt the
+                           cause.<corr resp="#LMC"/></l>
+                     <stage type="exit" place="center" resp="#LMC"
+                        who="#val #cam #cle #men #attendants"> Exit Valerio, Camillo, Cleanthes,
+                        Menallo, and Attendants.</stage>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Are they all gone?</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>All but your <corr resp="#LMC">faithful</corr> servant.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>I would tell thee,</l>
+                     <l>But 'tis a thing thou <corr resp="#LMC">cannot</corr> like.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>Pray ye speak it<corr resp="#LMC"><pc type="em_dash">—</pc></corr>is it my
+                        head? I have it ready for</l>
+                     <l>ye, Sir<corr resp="#LMC"><pc type="colon"/><pc type="period">.</pc></corr></l>
+                     <l>Is't any action in my <corr resp="#LMC">power</corr>? <corr resp="#LMC"
+                           >My</corr> wit?</l>
+                     <l>I care not of what nature, nor what <corr resp="#LMC">follows</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>I am in love.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>That's the least thing of a thousand,</l>
+                     <l>The easiest to <corr resp="#LMC">achieve</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>But with whom<corr resp="#LMC"><pc type="comma">,</pc></corr>
+                        <hi rend="italic"><persName>Sorano</persName>?</hi></l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>With whom you please, you must not be <corr resp="#LMC">denied</corr>,
+                        Sir.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Say it be with one of thy <corr resp="#LMC">kinswomen</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>Say <corr resp="#LMC">withal</corr>,</l>
+                     <l>I shall more love your Grace, I shall more <corr resp="#LMC">honor
+                        </corr>ye,</l>
+                     <l>And would I had enough to serve your pleasure.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Why 'tis thy <corr resp="#LMC">sister</corr> then, the <corr resp="#LMC"
+                           >fair</corr>
+                        <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+                     <l><corr resp="#LMC">I<pc type="apostrophe">'</pc>ll</corr> be <corr
+                           resp="#LMC">plain</corr> with thee.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l><corr resp="#LMC">I<pc type="apostrophe">'</pc>ll</corr> be as <corr
+                           resp="#LMC">plain</corr> with you<corr resp="#LMC"><pc type="comma"
+                              >,</pc></corr> Sir,</l>
+                     <l>She brought not her perfections to the world,</l>
+                     <l>To lock them in a case, or hang 'em by her,</l>
+                     <l>The use is all she breeds 'em for, she is yours, Sir.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l><corr resp="#LMC">Do thou mean</corr> seriously?</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>I <corr resp="#LMC">mean</corr> my <corr resp="#LMC">sister</corr>,</l>
+                     <l>And if I had a dozen more, they were all yours<corr resp="#LMC"><pc
+                        type="colon"/><pc type="period">.</pc></corr></l>
+                     <l>Some <corr resp="#LMC">aunts</corr> I have, they have been handsome
+                           women<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <cb n="2"/>
+                     <l>My mother's dead indeed, and some few <corr resp="#LMC">cousins</corr></l>
+                     <l>That are now shooting up<note resp="#LMC" type="gloss">growing quickly<bibl>OED shoot v.8a</bibl></note>, we shall see shortly.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>No, 'tis <hi rend="italic"><persName>Evanthe</persName></hi>.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>I have sent my man <corr resp="#LMC">after</corr> her<corr resp="#LMC"><pc
+                              type="comma"/></corr></l>
+                     <l>Upon some <corr resp="#LMC">business</corr> to come presently<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Hither, she shall come<corr resp="#LMC"><pc type="period">.</pc></corr> Your
+                        Grace dare speak <corr resp="#LMC">to</corr> her?</l>
+                     <l>Large golden promises<corr resp="#LMC"><pc type="comma"/></corr> and sweet
+                        language, Sir<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>You know what they <corr resp="#LMC">work</corr><corr resp="#LMC"><pc
+                              type="semicolon">;</pc></corr> she is a <corr resp="#LMC">complete
+                              courtier<pc type="period">.</pc></corr></l>
+                     <l>Besides<corr resp="#LMC"><pc type="comma">,</pc> I<pc type="apostrophe"
+                              >'</pc>ll</corr> set in.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>She <corr resp="#LMC">waits</corr> upon my <corr resp="#LMC"
+                           >Queen</corr><corr resp="#LMC"><pc type="semicolon">;</pc></corr></l>
+                     <l>What <corr resp="#LMC">jealousy</corr> and anger may arise,</l>
+                     <l>Incensing her?</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>You have a good sweet <corr resp="#LMC">lady</corr>,</l>
+                     <l>A woman of so even and still a temper,</l>
+                     <l>She knows not anger<corr resp="#LMC"><pc type="period">.</pc></corr>
+                        <corr resp="#LMC">Say</corr> she were a fury,</l>
+                     <l>I had thought you had been absolute the great King,</l>
+                     <l>The <corr resp="#LMC">fountain</corr> of all <corr resp="#LMC"
+                        >honors</corr>, <corr resp="#LMC">plays<pc type="comma">,</pc> and
+                           pleasures</corr>,</l>
+                     <l>Your will and your commands unbounded also<corr resp="#LMC"><pc
+                              type="period">.</pc></corr></l>
+                     <l>Go get a <corr resp="#LMC">pair</corr> of beads and <corr resp="#LMC"
+                           >learn</corr> to pray, Sir.</l>
+                  </lg>
+               </sp>
+               <stage type="entrance" place="center" who="#servants">Enter Servant.</stage>
+               <sp who="#servants">
+                  <speaker>Servant</speaker>
+                  <lg>
+                     <l>My Lord, your servant <corr resp="#LMC">stays</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>Bid him come hither, and bring the <corr resp="#LMC">lady</corr> with
+                        him.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>I will <corr resp="#LMC">woo</corr> her,</l>
+                     <l>And either lose my <corr resp="#LMC">self</corr>, or win her <corr
+                           resp="#LMC">favor</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>She is <corr resp="#LMC">coming</corr> in.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Thy eyes shoot through the <corr resp="#LMC">door</corr>,</l>
+                     <l>They are so piercing, that the <corr resp="#LMC">beams</corr> they dart</l>
+                     <l>Give new light to the <corr resp="#LMC">room</corr>.</l>
+                  </lg>
+               </sp>
+               <stage type="entrance" place="center" who="#pod #eva">Enter Podrano and
+                  Evanthe.</stage>
+               <stage type="exit" place="center" resp="#LMC" who="#servants">Exit Servant.</stage>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Whether <corr resp="#LMC">do </corr>thou go?</l>
+                     <l>This is the King<corr resp="#LMC"><pc type="apostrophe">'</pc></corr>s side,
+                        and his private lodgings<corr resp="#LMC"><pc type="period"
+                        >.</pc></corr></l>
+                     <l>What <corr resp="#LMC">business</corr> have I here?</l>
+                  </lg>
+               </sp>
+               <sp who="#pod">
+                  <speaker>Podrano</speaker>
+                  <lg>
+                     <l>My <corr resp="#LMC">lord</corr> sent for <corr resp="#LMC">you</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>His lodgings are below, you are mistaken,</l>
+                     <l>We left them at the <corr resp="#LMC">stair-foot</corr><note resp="#LMC" type="gloss">bottom of the stairs<bibl>OED stair-foot n.1a</bibl></note>.</l>
+                     <!-- how to treat "stair-foot"? -->
+                  </lg>
+               </sp>
+               <sp who="#pod">
+                  <speaker>Podrano</speaker>
+                  <lg>
+                     <l>Good sweet Madam<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>I am no <corr resp="#LMC">Councilor</corr>, nor important <corr resp="#LMC"
+                           >suitor</corr>.</l>
+                     <l>Nor have no private <corr resp="#LMC">business</corr> through these <corr
+                           resp="#LMC">chambers</corr>,</l>
+                     <l>To seek him this way, o' my life thou art<corr resp="#LMC">
+                           drunk</corr><corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Or worse <corr resp="#LMC">than drunk</corr>, <corr resp="#LMC">hir<pc
+                              type="apostrophe"/>ed</corr> to convey me hither</l>
+                     <l>To some base end<corr resp="#LMC"><pc type="period">.</pc></corr>
+                        <corr resp="#LMC">Now</corr> I <corr resp="#LMC">look</corr> on thee
+                           better<corr resp="#LMC"><pc type="semicolon">;</pc></corr></l>
+                     <l>Thou hast a bawdy face, and I abhor thee,</l>
+                     <l>A beastly bawdy face, <corr resp="#LMC">I<pc type="apostrophe"
+                           >'</pc>ll</corr> go no further.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l><corr resp="#LMC">No<pc type="comma">,</pc></corr> shrink not back, indeed
+                        you shall good <corr resp="#LMC">sister</corr><corr resp="#LMC"><pc
+                              type="period">.</pc></corr></l>
+                     <l>Why do you blush? <corr resp="#LMC">The</corr> good King will not hurt
+                        ye,</l>
+                     <l>He <corr>honors</corr> ye, and loves ye.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Is this the <corr resp="#LMC">business</corr>?</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>Yes, and the best you ever will <corr resp="#LMC">arrive</corr> at, if you
+                           <lb rend="indent"/>be wise.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>My Father was no bawd<note resp="#LMC" type="gloss">go-between; pimp<bibl>OED bawd n.1</bibl></note><corr resp="#LMC"><pc type="comma">,</pc></corr>
+                        Sir,</l>
+                     <fw type="catch">Nor</fw>
+                     <pb n="AWFAM-002"/>
+                     <fw type="pageNum">48</fw>
+                     <cb n="1"/>
+                     <l>Nor of that <corr resp="#LMC">worshipful</corr> stock as I remember.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>You are a <corr resp="#LMC">fool</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>You are that I shame to tell ye.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Gentle <hi rend="italic"><persName>Evanthe</persName></hi>.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>The gracious Queen<corr resp="#LMC"><pc type="comma">,</pc></corr> Sir<corr
+                           resp="#LMC"><pc type="comma">,</pc></corr></l>
+                     <l>Is well and merry, heaven be thanked for it,</l>
+                     <l>And as I think she <corr resp="#LMC">awaits</corr> you in the <corr
+                           resp="#LMC">garden</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Let her wait there, I talk not of her <corr resp="#LMC">garden</corr>,</l>
+                     <l>I talk of <corr resp="#LMC">her</corr> sweet flower.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Your Grace is pleasant<corr resp="#LMC"><pc type="comma"/></corr></l>
+                     <l>To mistake a nettle<note resp="#LMC" type="gloss">plant with green flowers and stinging hairs<bibl>OED nettle n.1a</bibl></note> for a rose.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>No <corr resp="#LMC">rose</corr>, nor <corr resp="#LMC">lily</corr>, nor no
+                        glorious <corr resp="#LMC">hyacinth</corr></l>
+                     <l>Are of that <corr resp="#LMC">sweetness, whiteness, tenderness</corr>,</l>
+                     <l><corr resp="#LMC">Softness</corr>, and satisfying <corr resp="#LMC"
+                           >blessedness</corr></l>
+                     <l>As my <hi rend="italic"><persName>Evanthe</persName></hi>.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Your Grace <corr resp="#LMC">speaks</corr> very feelingly<corr resp="#LMC"
+                              ><pc type="semicolon">;</pc></corr></l>
+                     <l>I would not be a <corr resp="#LMC">handsome</corr> wench<note resp="#LMC" type="context">While “wench” is a clearly gendered term (referring almost exclusively to females), it has many different meanings, all of which are applicable in this context.  In a more neutral sense, a wench might describe a “girl, maid, young woman” or a “girl of the rustic or working class.”<bibl>OED wench n.1a, 1b</bibl> It is likely that Frederick employs wench as a term of endearment here, as he is courting Evanthe–a wench could be used in reference to a “sweetheart.”<bibl>OED wench n.1c</bibl> The last possible meaning of wench is a “wanton woman; a mistress,”<bibl>OED wench n.2</bibl> which is also quite applicable here.  Frederick follows this up by telling Evanthe “Thou shalt be any thing,” objectifying her in a multi-dimensional way that perhaps encompasses the different definitions of “wench.”  Evanthe is not yet a wanton woman, but Frederick desires her in that manner and persistently attempts to court her into being his mistress.</note> in your way<corr
+                           resp="#LMC"><pc type="comma">,</pc></corr> Sir,</l>
+                     <l>For a new <corr resp="#LMC">gown</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Thou art <corr resp="#LMC">all handsomeness</corr><corr resp="#LMC"><pc
+                              type="semicolon">;</pc></corr></l>
+                     <l>Nature will be <corr resp="#LMC">asham<pc type="apostrophe"/>ed</corr> to
+                        frame another<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Now thou art made, thou hast<corr resp="#LMC"> robbe<pc type="apostrophe"
+                     />d</corr> her of her cunning<note resp="#LMC" type="gloss">artfulness<bibl>OED cunning n.5a</bibl></note><corr resp="#LMC"><pc type="period"
+                           >.</pc></corr></l>
+                     <l>Each <corr resp="#LMC">several</corr> part about thee is a beauty.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>Do you <corr resp="#LMC">hear</corr> this<corr resp="#LMC"><pc type="comma"
+                              >,</pc></corr>
+                        <corr resp="#LMC">sister</corr>?</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Yes<corr resp="#LMC"><pc type="comma">,</pc></corr> unworthy <corr
+                           resp="#LMC">brother</corr>, but all this will not do.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>But love <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+                     <l>Thou shalt have more <corr resp="#LMC">than</corr> words, wealth, ease, and
+                           honors<corr resp="#LMC"><pc type="comma">,</pc></corr></l>
+                     <l>My tender wench.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Be tender of my credit,</l>
+                     <l>And I shall love you<corr resp="#LMC"><pc type="comma">,</pc></corr> Sir,
+                        and I shall <corr resp="#LMC">honor</corr> ye.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>I love thee to <corr resp="#LMC">enjoy <pc type="comma">thee,</pc></corr> my
+                           <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+                     <l>To give thee the content of love.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Hold, hold<corr resp="#LMC"><pc type="comma">,</pc></corr> Sir, <corr
+                           resp="#LMC">you</corr> are <corr resp="#LMC">too</corr> fleet<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>I have some <corr resp="#LMC">business</corr> this way, your Grace can
+                        nere<!-- not sure how to treat "nere" --> content.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>You <corr resp="#LMC">stubborn</corr> toy.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Good my Lord <hi rend="italic">Bawd</hi> I thank ye.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Thou shalt not go, <corr resp="#LMC">believe</corr> me<corr resp="#LMC"><pc
+                              type="comma">,</pc></corr> sweet <hi rend="italic"
+                              ><persName>Evanthe</persName></hi>,</l>
+                     <l>So high I will advance thee for this <corr resp="#LMC">favor</corr>,</l>
+                     <l>So rich and potent I will raise thy fortune<corr resp="#LMC"><pc
+                              type="comma"/></corr></l>
+                     <l>And thy friends mighty.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Good your Grace<corr resp="#LMC"><pc type="comma">,</pc></corr> be
+                        patient,</l>
+                     <l>I shall make the <corr resp="#LMC">most</corr>
+                        <corr resp="#LMC">honorable</corr> wench that ever was<corr resp="#LMC"><pc
+                              type="period">.</pc></corr></l>
+                     <l>Shame your discretion<corr resp="#LMC"><pc type="comma"/></corr> and your
+                           <corr resp="#LMC">choice</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Thou shalt not.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Shall I be rich<corr resp="#LMC"><pc type="comma">,</pc></corr> do you
+                           say<corr resp="#LMC"><pc type="question_mark">?</pc></corr>
+                        <corr resp="#LMC">And</corr> glorious<corr resp="#LMC"><pc
+                              type="question_mark">?</pc></corr></l>
+                     <l>And shine above the rest<corr resp="#LMC"><pc type="question_mark"
+                           >?</pc></corr>
+                        <corr resp="#LMC">And</corr>
+                        <corr resp="#LMC">scorn</corr> all beauties<corr resp="#LMC"><pc
+                              type="question_mark">?</pc></corr></l>
+                     <l>And mighty in command?</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Thou shalt be any thing.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Let me be honest too, and then <corr resp="#LMC">I<pc type="apostrophe"
+                              >'</pc>ll</corr> thank ye.</l>
+                     <l>Have you not such a title to bestow too?</l>
+                     <l>If I prove otherwise, I would know but this<corr resp="#LMC"><pc
+                              type="comma">,</pc></corr> Sir<corr resp="#LMC"><pc type="colon"
+                              >:</pc></corr></l>
+                     <l>Can all the power you have<corr resp="#LMC"><pc type="comma">,</pc></corr>
+                        or all the riches,</l>
+                     <l>But <corr resp="#LMC">tie</corr> men<corr resp="#LMC"><pc type="apostrophe"
+                              >'</pc></corr>s tongues up from discoursing of me,</l>
+                     <l>Their eyes from gazing at my glorious folly,<note resp="#LMC" type="context">While a brief gloss of “folly” within this context might lend itself to “lewdness” or “wantonness”–<bibl>OED folly n.3a</bibl>especially given Evanthe’s concern for her reputation if she acquiesces to Frederick’s relentless courting—the sixteenth-century Praise of Folly by Desiderus Erasmus (1511) opens up our understanding of the term. The personified Folly is a female character who speaks on her own behalf in a sort of defense tract throughout the text, which is supposedly composed during “a little time off for play,” but “leads to something slightly more serious” and perhaps educational (Author’s Preface 4-5).  Folly is quite the spectacle throughout her extended self-praise; Evanthe would assume a similar role of public exhibition if she were to submit to her own feminine folly in this moment.  The ending of The Praise of Folly is quite noteworthy, as Folly undermines herself and her reliability as a rhetor—addressing her male audience, she muses: “If you think I’ve been too cheeky or long-winded, remember you’ve been listening to Folly and a woman” (87).  Like Folly, Evanthe is very aware of the societal constraints of her gender; while both women exemplify strong female characteristics, they also both undermine themselves.  Although Evanthe turns down Frederick’s advances, she does so partially out of concern for her reputation as a woman, as opposed to entirely out of her own agency (or at least that is the image she is projecting here).<bibl>Desiderus Erasmus, The Praise of Folly (1511).</bibl></note></l>
+                     <l>Time that shall come from wondering at my impudence,</l>
+                     <l>And they that read my wanton life from curses?</l>
+                     <l>Can you do this? <corr resp="#LMC">H</corr>ave ye this <corr resp="#LMC"
+                           >magic</corr> in ye?</l>
+                     <l>This is not in your <corr resp="#LMC">power</corr>, though you be a <corr
+                           resp="#LMC">prince<pc type="comma">,</pc></corr> Sir,</l>
+                     <l>No more <corr resp="#LMC">than evil</corr> is in holy <corr resp="#LMC"
+                              >angels<pc type="period">.</pc></corr></l>
+                     <l>Nor I<corr resp="#LMC">
+                           <pc type="parenthesis">(</pc>I hope<pc type="parenthesis">)</pc></corr>
+                        get wantonnesse <corr resp="#LMC">confirme<pc type="apostrophe"
+                        />d</corr></l>
+                     <l>By <corr resp="#LMC">act</corr> of Parliament <corr resp="#LMC">and</corr>
+                        honesty,</l>
+                     <l>And so <corr resp="#LMC">receive<pc type="apostrophe"/>d</corr> by all,
+                           <corr resp="#LMC">I<pc type="apostrophe">'</pc>ll</corr> hearken to
+                        ye.</l>
+                     <l>Heaven guide your Grace.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l><hi rend="italic"><persName>Evanthe</persName></hi>, stay a little,</l>
+                     <l><corr resp="#LMC">I<pc type="apostrophe">'</pc>ll</corr> no more <corr
+                           resp="#LMC">wantonness</corr>, <corr resp="#LMC">I<pc type="apostrophe"
+                              >'</pc>ll</corr> marry thee.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>What shall the <corr resp="#LMC">Queen</corr> do?</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l><corr resp="#LMC">I<pc type="apostrophe">'</pc>ll</corr> be <corr
+                           resp="#LMC">divorced</corr> from her.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Can you tell why? <corr resp="#LMC">What</corr> has she done against ye?</l>
+                     <l>Has she contrived a treason <corr resp="#LMC"><pc type="apostrophe"
+                           >'</pc></corr>gainst your <corr resp="#LMC">person</corr>?</l>
+                     <cb n="2"/>
+                     <l>Abus'd<note resp="#LMC" type="gloss">cuckholded; cheated on<bibl>Shakespeare, Merry Wives of Windsor, Act II, Scene 2</bibl></note> your bed? 
+                        <corr resp="#LMC">Does</corr> disobedience urge ye?</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>That's all one, 'tis my will.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>'Tis a most wicked one,</l>
+                     <l>A most absurd one, and will show a <corr resp="#LMC">monster</corr><corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>I had rather be a <corr resp="#LMC">whore</corr>, and with <corr resp="#LMC"
+                           >less</corr> sin,</l>
+                     <l>To your present lust, <corr resp="#LMC">than queen</corr> to your <corr
+                           resp="#LMC">injustice</corr>.</l>
+                     <l>Yours is no love, <corr resp="#LMC">faith and religion</corr> fly it,</l>
+                     <l>Nor has no taste of <corr resp="#LMC">fair</corr> affection in it,</l>
+                     <l>Some hellish flame abuses your <corr resp="#LMC">fair</corr> body,</l>
+                     <l>And hellish furies blow it<corr resp="#LMC"><pc type="period">.</pc></corr>
+                        <corr resp="#LMC">Look</corr>
+                        <corr resp="#LMC">behind </corr>ye,</l>
+                     <l><corr resp="#LMC">Divorce </corr>ye from a woman of her beauty<corr
+                           resp="#LMC">?</corr></l>
+                     <l>Of her integrity, her piety?</l>
+                     <l>Her love to you, to all that <corr resp="#LMC">honors</corr> ye,</l>
+                     <l>Her <corr resp="#LMC">chaste and virtuous</corr> love<corr resp="#LMC"><pc
+                              type="em_dash">—</pc></corr>are these fit causes?</l>
+                     <l>What will you do to me<corr resp="#LMC"><pc type="comma"/></corr> when I
+                        have cloy<corr resp="#LMC"><pc type="apostrophe">'</pc></corr>d<note resp="#LMC" type="gloss">weighed down; encumbered<bibl>OED cloy v.6</bibl></note> ye?</l>
+                     <l>You may <corr resp="#LMC">find</corr> time out in eternity,</l>
+                     <l>Deceit and violence in heavenly <corr resp="#LMC">justice</corr>,</l>
+                     <l>Life in the grave, and death among the blessed,</l>
+                     <l>Ere <corr resp="#LMC">stain</corr> or <corr resp="#LMC">breach</corr> in her
+                        sweet reputation.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>You have <corr resp="#LMC">fool<pc type="apostrophe"/>ed</corr> enough, be
+                        wise now, and a wo<corr resp="#LMC"><pc type="hyphen"/></corr>man<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>You have <corr resp="#LMC">shown</corr> a modesty sufficient,</l>
+                     <l>If not too much for Court.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>You have <corr resp="#LMC">shown</corr> an impudence,</l>
+                     <l>A more <corr resp="#LMC">experienc<pc type="apostrophe"/>ed</corr> bawd
+                        would blush and shake at;</l>
+                     <l>You will make my kindred mighty.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l><corr resp="#LMC">Pray you hear</corr> me.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>I do<corr resp="#LMC"><pc type="comma">,</pc></corr> Sir, and I count it a
+                        great offer.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Any of thine.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>'Tis like enough you may clap <corr resp="#LMC">honor</corr> on them,</l>
+                     <l>But how 'twill sit,<note resp="#LMC" type="textual">It is unclear in the copy-text whether this should read as “sit” or “fit.”  Both words work in this context, and yield potentially different meanings.  “Sit” suggests how Frederick’s adultery will occupy his internal character, while “fit” might allude to his reputation.  Evanthe asks “how men will adore it” or what they will think of Frederick’s hypothetical decision to leave the Queen for Evanthe¬—how will such an act “fit” within public opinion of the King?</note> <!--possible f/i, yielding 'fit'-->and how men will
+                        adore it,</l>
+                     <l>Is still the question. <corr resp="#LMC">I<pc type="apostrophe"
+                           >'</pc>ll</corr> tell you what <corr resp="#LMC">they'll</corr> say<corr
+                           resp="#LMC"><pc type="comma">,</pc></corr> Sir,</l>
+                     <l>What the report will be, and <corr resp="#LMC"><pc type="apostrophe"/>it
+                           will</corr> be true too,</l>
+                     <l>And it must needs be comfort to your Master<corr resp="#LMC"><pc
+                              type="period">.</pc></corr></l>
+                     <l>These are the issues of her impudence:</l>
+                     <l><corr resp="#LMC">I<pc type="apostrophe">'</pc>ll</corr> tell your Grace, so
+                           <corr resp="#LMC">dear</corr> I hold the <corr resp="#LMC"
+                        >Queen</corr>,</l>
+                     <l>So <corr resp="#LMC">dear</corr> that <corr resp="#LMC">honor</corr> that
+                        she <corr resp="#LMC">nurs<pc type="apostrophe"/>ed</corr> me up in<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>I would first take to me, for my lust, a <corr resp="#LMC">moor</corr>,</l>
+                     <l>One of your Gally-slaves<!-- come back to -->, that cold and hunger,</l>
+                     <l><corr resp="#LMC">Decrepit</corr> misery, had made a mock-man<note resp="#LMC" type="gloss">chimpanzee; unworthy of being called a man<bibl>OED mock-man n.</bibl></note>,</l>
+                     <l><corr resp="#LMC">Than</corr> be your <corr resp="#LMC">queen</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>You are bravely resolute.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>I had rather be a <corr resp="#LMC">leper</corr>, and be <corr resp="#LMC"
+                              >shun<pc type="apostrophe"/>ned,</corr></l>
+                     <l>And <corr resp="#LMC">die by pieces</corr>, rot into my grave,</l>
+                     <l>Leaving no memory behind to know me,</l>
+                     <l><corr resp="#LMC">Than</corr> be a high <corr resp="#LMC">whore</corr> to
+                        eternity.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>You have a<hi rend="turned">n</hi>other <corr resp="#LMC">suitor<pc
+                              type="comma">,</pc></corr> I perceive by <corr resp="#LMC"
+                        >you</corr>,</l>
+                     <l>You <corr resp="#LMC">dare</corr> not slight me else.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l><corr resp="#LMC">I<pc type="apostrophe">'</pc>ll</corr>
+                        <corr resp="#LMC">find</corr> him out,</l>
+                     <l>Though he <corr resp="#LMC">lie</corr> next thy heart hid, <corr resp="#LMC"
+                              >I<pc type="apostrophe"/>'ll</corr> discover him,</l>
+                     <l>And ye proud <corr resp="#LMC">pet</corr>, <corr resp="#LMC">I<pc
+                              type="apostrophe">'</pc>ll</corr> make you curse your insolence.</l>
+                  </lg>
+               </sp>
+               <sp who="#val">
+                  <speaker>Valerio</speaker>
+                  <lg>
+                     <l>Tongue of an <corr resp="#LMC">angel</corr>, and the truth of Heaven,</l>
+                     <l>How am I <corr resp="#LMC">blessed</corr>?<stage type="exit" place="right"
+                           who="#val">Exit Valerio</stage></l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l><hi rend="italic"><persName>Podrano</persName></hi> go in <corr resp="#LMC"
+                           >haste</corr></l>
+                     <l>To my <corr resp="#LMC">sister<pc type="apostrophe">'</pc>s</corr>
+                        Gentlewoman, you know her well,</l>
+                     <l>And bid her send her <corr resp="#LMC">Mistress</corr> presently<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>The lesser <corr resp="#LMC">cabinet</corr><note resp="#LMC" type="context">The woman’s cabinet has been cited as proof of the role of “historical women[…]as[…]designated[…] poetic recipients,” as Diane Mitchell’s recent article “The Absent Lady and the Renaissance Lyric as Letter” (2019) clarifies (328).  According to Mitchell, these cabinets “demonstrate that the ‘lady’ was, in fact, the ‘reader more often than we have recognized” (328).  The letter from Valerio that the men eventually find is composed in verse form, supporting Mitchell’s argument for the prominence of the female poetry reader and recipient/audience in the early modern period.  Furthermore, the significance of the cabinet receptacle was preservation-based, as the letters served “as visible, tactile evidence of the sender’s feelings” that “could be revisited again and again” (315).  The lack of physical “evidence” in Frederick’s arduous courting of Evanthe is worth consideration as well here.  Evanthe is concerned for her reputation and how Frederick will account for the esteem damage she will consequentially take as a young, outwardly chaste woman.  Without hard proof of his love, Evanthe is left to her own word, which will likely not hold up against that of the King, should he violate his lofty and lust-driven verbal promises to her. See<bibl>Mitchell, Diane. "The Absent Lady and the Renaissance Lyric as Letter." ELR volume 49, number 3, 2019, pp. 304-29.</bibl></note> she keeps her <corr resp="#LMC"
+                           >letters</corr> in,</l>
+                     <l>And such like <corr resp="#LMC">toyes</corr>, <corr resp="#LMC"/> bring it
+                        to me <corr resp="#LMC">instantly</corr>. Away.</l>
+                  </lg>
+               </sp>
+               <sp who="#pod">
+                  <speaker>Podrano</speaker>
+                  <lg>
+                     <l>I am gone.<stage type="exit" place="right" who="#pod">Exit <corr resp="#LMC">
+                              Podrano</corr>.</stage></l>
+                  </lg>
+               </sp>
+               <stage type="entrance" place="center" who="#queen #ladies">Enter the <corr
+                     resp="#LMC">Queen</corr> with two Ladies.</stage>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>The <corr resp="#LMC">Queen</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l><corr resp="#LMC">Let<pc type="apostrophe">'</pc>s</corr> quit the place,
+                        she may grow jealous.<stage type="exit" place="center" resp="#LMC"
+                           who="#fred #sor">Exit <corr>Frederick and Sorano.</corr></stage></l>
+                  </lg>
+               </sp>
+
+               <sp who="#queen">
+                  <speaker>Queen</speaker>
+                  <lg>
+                     <l>So suddenly departed, what's the reason?</l>
+                     <l><corr resp="#LMC">Doe<pc type="apostrophe"/>s</corr> my approach displease
+                        his Grace? <corr resp="#LMC">Are</corr> my eyes</l>
+                     <l>So <corr resp="#LMC">hateful</corr> to him? <corr resp="#LMC">Or</corr> my
+                        conversation</l>
+                     <l>Infected, that he flies me? <corr resp="#LMC">Fair</corr>
+                        <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+                     <l>Are you there? <corr resp="#LMC">Then</corr> I see his shame.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>'Tis true<corr resp="#LMC"><pc type="comma">,</pc></corr> Madam,</l>
+                     <fw type="catch">'Tha<unclear>t</unclear></fw>
+                     <pb n="AWFAM-003"/>
+                     <fw type="pageNum">49</fw>
+                     <cb n="1"/>
+                     <l><corr resp="#LMC"><pc type="apostrophe"/>It has</corr>
+                        <corr resp="#LMC">pleas<pc type="apostrophe"/>ed</corr> his <corr
+                           resp="#LMC">Goodness</corr> to be pleasant with me<corr resp="#LMC"
+                           >.</corr></l>
+                  </lg>
+               </sp>
+               <sp who="#queen">
+                  <speaker>Queen</speaker>
+                  <lg>
+                     <l>'Tis strange to <corr resp="#LMC">find</corr> thy modesty in this place<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l><corr resp="#LMC">Doe<pc type="apostrophe"/>s</corr> the King offer <corr
+                           resp="#LMC">fair</corr>? <corr resp="#LMC">Doe<pc type="apostrophe"
+                           />s</corr> thy face take him?</l>
+                     <l><corr resp="#LMC">Never</corr> blush<corr resp="#LMC"><pc type="comma"
+                              >,</pc></corr>
+                        <hi rend="italic"><persName>Evanthe</persName></hi>, 'tis a very sweet
+                           one<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l><corr resp="#LMC">Doe<pc type="apostrophe"/>s</corr> he <corr resp="#LMC"
+                           >rain</corr> gold, and precious promises</l>
+                     <l>Into thy lap? <corr resp="#LMC">Will</corr> he advance thy fortunes?</l>
+                     <l>Shalt thou be mighty<corr resp="#LMC"><pc type="comma">,</pc></corr>
+                        wench?</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Never mock<corr resp="#LMC"><pc type="comma">,</pc></corr> Madam;</l>
+                     <l>'Tis rather on your part to be lamented,</l>
+                     <l>At least <corr resp="#LMC">reveng<pc type="apostrophe"/>ed</corr><corr
+                           resp="#LMC"><pc type="period">.</pc></corr> I can be mighty<corr
+                           resp="#LMC"><pc type="comma">,</pc></corr> Lady,</l>
+                     <l>And glorious<corr resp="#LMC"><pc type="comma">,</pc> too<pc type="em_dash"
+                              >—</pc></corr>glorious and great<corr resp="#LMC"><pc type="comma"
+                           /></corr> as you are.</l>
+                  </lg>
+               </sp>
+               <sp who="#queen">
+                  <speaker>Queen</speaker>
+                  <lg>
+                     <l>He will marry thee.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Who would not be a <corr resp="#LMC">Queen</corr>, Madam?</l>
+                  </lg>
+               </sp>
+               <sp who="#queen">
+                  <speaker>Queen</speaker>
+                  <lg>
+                     <l>'Tis true <hi rend="italic"><persName>Evanthe</persName></hi>, 'tis a brave
+                        ambition,</l>
+                     <l>A golden <corr resp="#LMC">dream</corr>, that may delude a good <corr
+                           resp="#LMC">mind</corr><corr resp="#LMC"><pc type="period"
+                        >.</pc></corr></l>
+                     <l>What shall become of me?</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>You must <corr resp="#LMC">learn</corr> to pray<corr resp="#LMC"><pc
+                              type="semicolon">;</pc></corr></l>
+                     <l>Your age and <corr resp="#LMC">honor</corr> will become a <corr resp="#LMC"
+                        >nunnery</corr>.<note resp="#LMC" type="context">To a modern reader, “nunnery” might simply suggest a convent or have religious implications, which makes great sense in this context, especially as Evanthe alludes to the Queen’s “age and honor” (i.e., as an aged woman who has already been married, the Queen’s only option would be to enter a religious convent to preserve such honor).  However, another possible reading of “nunnery” as a “brothel” exists. <bibl>OED nunnery n.1b</bibl>The OED’s slang entry on “nunnery” as “brothel” lists several literary examples, with Beaumont and Fletcher’s The Mad Lover from the 1647 folio being one of them.  In this second reading of “nunnery,” Evanthe would also be suggesting that the Queen’s “age and honor” will be reduced to an “abandoned woman” or “prostitute." <bibl>OED brothel n.2a</bibl>“Nunnery” here additionally evokes Hamlet’s dismissive comment to Ophelia in Act 3, Scene 1: “Get thee to a nunnery.”  In an entry in Oxford UP’s Notes and Queries, D.S. Bland cites one Professor Nevill Coghill who alludes to “some slender evidence” in the OED for the nunnery here referring to a brothel (332).</note></l>
+                  </lg>
+               </sp>
+               <sp who="#queen">
+                  <speaker>Queen</speaker>
+                  <lg>
+                     <l>Wilt thou remember me?<stage type="business" place="right"
+                        >Weeps.</stage></l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>She weeps. Sweet Lady<corr resp="#LMC"><pc type="comma">,</pc></corr></l>
+                     <l>Upon my knees I <corr resp="#LMC">ask</corr> your sacred pardon<corr
+                           resp="#LMC"><pc type="comma"/></corr></l>
+                     <l>For my rude <corr resp="#LMC">boldness</corr><corr resp="#LMC"><pc
+                              type="period">.</pc></corr>
+                        <corr resp="#LMC">And</corr> know, my sweet <corr resp="#LMC"
+                           >Mistress</corr>,</l>
+                     <l>If <corr resp="#LMC">e<pc type="apostrophe"/>ver</corr> there were ambition
+                        in <hi rend="italic"><persName>Evanthe</persName></hi>,</l>
+                     <l>It was and is to do you <corr resp="#LMC">faithful</corr> duties<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>'Tis true I have been tempted by the King,</l>
+                     <l>And with no few and potent <corr resp="#LMC">charms</corr>, to wrong ye,</l>
+                     <l>To violate the chaste <corr resp="#LMC">joys</corr> of your bed<corr
+                           resp="#LMC"><pc type="comma">,</pc></corr></l>
+                     <l>And those not taking hold, to <corr resp="#LMC">usurp</corr> your state<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>But she that has been bred up under ye,</l>
+                     <l>And daily fed upon your <corr resp="#LMC">virtuous</corr> precepts,</l>
+                     <l>Still growing strong by example of your <corr resp="#LMC"
+                        >goodness</corr>,</l>
+                     <l>Having no errant motion from obedience,</l>
+                     <l><corr resp="#LMC">Flies</corr> from these vanities<corr resp="#LMC"><pc
+                              type="comma"/></corr> as <corr resp="#LMC">mere</corr> illusions<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>And <corr resp="#LMC">armed</corr> with honesty, defies all promises.</l>
+                     <l>In token of this truth, I lay my life <corr resp="#LMC">down</corr></l>
+                     <l>Under your sacred foot, to do you service.</l>
+                  </lg>
+               </sp>
+               <sp who="#queen">
+                  <speaker>Queen</speaker>
+                  <lg>
+                     <l>Rise<corr resp="#LMC"><pc type="comma">,</pc></corr> my true friend,
+                           thou<corr resp="#LMC"> virtuous</corr>, bud of beauty<corr resp="#LMC"
+                              ><pc type="period">.</pc></corr></l>
+                     <l>Thou<corr resp="#LMC"> virgin<pc type="apostrophe">'</pc>s</corr>
+                        <corr resp="#LMC">honor</corr>, sweetly blow and flourish,</l>
+                     <l>And that rude nipping <corr resp="#LMC">wind</corr><corr resp="#LMC"><pc
+                              type="comma"/></corr> that seeks to blast thee,</l>
+                     <l>Or taint thy root, be <corr resp="#LMC">cursed</corr> to all posterity<corr
+                           resp="#LMC"><pc type="semicolon"/></corr></l>
+                     <l>To my <corr resp="#LMC">protection</corr> from this <corr resp="#LMC"
+                           >hour</corr> I take ye,</l>
+                     <l>Yes, and the King shall know<pc type="dash">—</pc></l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Give his heat way, Madam,</l>
+                     <l>And <corr resp="#LMC">it will</corr> go out <corr resp="#LMC"
+                           >again</corr><corr resp="#LMC"><pc type="period">.</pc></corr>
+                        <corr resp="#LMC">He</corr> may forget all.<stage type="exit" place="center"
+                           resp="#LMC">Exeunt.</stage></l>
+                  </lg>
+               </sp>
+            </div>
+            <div type="scene" n="2" resp="#LMC">
+               <head resp="#LMC">Act 1, Scene 2.</head>
+               <stage type="entrance" place="center" who="#cam #cle #men">Enter Camillo, Cleanthes,
+                  and Menallo.</stage>
+               <sp who="#cam">
+                  <speaker>Camillo</speaker>
+                  <lg>
+                     <l>What have we to do with the times? <corr resp="#LMC">We</corr> cannot cure 
+                           'em<corr resp="#LMC"><pc type="period">.</pc></corr> Let 'em go on<corr
+                           resp="#LMC"><pc type="em_dash">—</pc></corr><corr resp="#LMC"/>when they
+                        are <corr resp="#LMC">swollen</corr> with surfets<note resp="#LMC" type="gloss">lack of moderation; excessive indulgence; excess<bibl>OED surfeit n.5</bibl></note></l>
+                     <l><corr resp="#LMC">They'll</corr> burst and stink, then all the world shall
+                        smell 'em<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                  </lg>
+               </sp>
+               <sp who="#cle">
+                  <speaker>Cleanthes</speaker>
+                  <lg>
+                     <l>A man may live a bawd, and be an honest man.</l>
+                  </lg>
+               </sp>
+               <sp who="#men">
+                  <speaker>Menallo</speaker>
+                  <lg>
+                     <l>Yes, and a wise man too, 'tis a <corr resp="#LMC">virtuous</corr>
+                        calling.</l>
+                  </lg>
+               </sp>
+               <sp who="#cam">
+                  <speaker>Camillo</speaker>
+                  <lg>
+                     <l>To his <corr resp="#LMC">own</corr> wife especially, or to his sister<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>The <corr resp="#LMC">nearer</corr> to his <corr resp="#LMC">own</corr>
+                        blood, still the <corr resp="#LMC">more honest</corr><corr resp="#LMC"><pc
+                              type="period">.</pc></corr></l>
+                     <l>There want such honest men, would we had more of 'em.</l>
+                  </lg>
+               </sp>
+               <sp who="#men">
+                  <speaker>Menallo</speaker>
+                  <lg>
+                     <l>To be a <corr resp="#LMC">villain</corr> is no such rude matter.</l>
+                  </lg>
+               </sp>
+               <sp who="#cam">
+                  <speaker>Camillo</speaker>
+                  <lg>
+                     <l>No, if he be a neat one, and a perfect,</l>
+                     <l>Art makes all excellent, what <corr resp="#LMC">isn<pc type="apostrophe"
+                              >'</pc>t gentle</corr>.</l>
+                     <l>In a good cause to kill a dozen coxcombs<note resp="#LMC" type="gloss">fool; stupid person<bibl>OED coxcomb n.4a</bibl></note>?</l>
+                     <l>That blunt rude <corr resp="#LMC">fellows</corr> call good <corr resp="#LMC"
+                           >patriots</corr>?</l>
+                     <l>Nothing, nor <corr resp="#LMC">never</corr>
+                        <corr resp="#LMC">looked</corr> after.</l>
+                  </lg>
+               </sp>
+               <sp who="#men">
+                  <speaker>Menallo</speaker>
+                  <lg>
+                     <l>'Tis <corr resp="#LMC">even</corr> as much, as <corr resp="#LMC">easy</corr>
+                        too, as honest, &amp; as <corr resp="#LMC">clear</corr>,</l>
+                     <l>To ravish <corr resp="#LMC">matrons</corr>, and <corr resp="#LMC"
+                           >deflower</corr> coy wenches,</l>
+                     <l>But here they are so willing, 'tis a <corr resp="#LMC"
+                        >compliment</corr>.</l>
+                     <!-- I wonder if "complement" is perhaps meant to be a pun here? -->
+                  </lg>
+               </sp>
+               <sp who="#cle">
+                  <speaker>Cleanthes</speaker>
+                  <lg>
+                     <l>To pull <corr resp="#LMC">down</corr>
+                        <corr resp="#LMC">churches</corr> with pretention,</l>
+                     <l>To build 'em fairer, may be done with <corr resp="#LMC">honor</corr>,</l>
+                     <l>And all this time <corr resp="#LMC">believe</corr> no God.</l>
+                  </lg>
+               </sp>
+               <sp who="#cam">
+                  <speaker>Camillo</speaker>
+                  <lg>
+                     <l>I think so, 'tis faith enough if they name him in their angers,</l>
+                     <l>Or on their rotten <corr resp="#LMC">tombs engrave</corr> an <corr
+                           resp="#LMC">angel</corr><corr resp="#LMC"><pc type="period"
+                        >.</pc></corr></l>
+                     <l>Well, brave <hi rend="italic"><persName>Alphonso</persName></hi>, how happy
+                        had we been,</l>
+                     <cb n="2"/>
+                     <l>If thou <corr resp="#LMC">had reigned?</corr></l>
+                  </lg>
+               </sp>
+               <sp who="#men">
+                  <speaker>Menallo</speaker>
+                  <lg>
+                     <l>Would I had his disease,</l>
+                     <l><corr resp="#LMC">Tied</corr> like a <corr resp="#LMC">leprosy</corr> to my
+                        posterity,</l>
+                     <l>So he were right <corr resp="#LMC">again</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#cle">
+                  <speaker>Cleanthes</speaker>
+                  <lg>
+                     <l>What is his <corr resp="#LMC">malady</corr>?</l>
+                  </lg>
+               </sp>
+               <sp who="#cam">
+                  <speaker>Camillo</speaker>
+                  <lg>
+                     <l>Nothing but sad and silent <corr resp="#LMC">melancholy</corr>,</l>
+                     <l>Laden with <corr resp="#LMC">griefs</corr> and thoughts, no man knows why
+                           nei<corr resp="#LMC"><pc type="hyphen"/></corr>ther<corr resp="#LMC"><pc
+                              type="period">.</pc></corr></l>
+                     <l>The good <hi rend="italic"><persName>Brandino</persName></hi><corr
+                           resp="#LMC"><pc type="comma">,</pc></corr>
+                        <corr resp="#LMC">father</corr> to the <corr resp="#LMC"
+                        >princess</corr>,</l>
+                     <l>Used all the art and industry that might be<corr resp="#LMC"><pc
+                              type="comma"/></corr></l>
+                     <l>To free <hi rend="italic"><persName>Alphonso</persName></hi> from this dull
+                        calamity,</l>
+                     <l>And seat him in his rule<corr resp="#LMC"><pc type="period">.</pc></corr>
+                        <corr resp="#LMC">He</corr> was his eldest<corr resp="#LMC"><pc type="comma"
+                              >,</pc></corr></l>
+                     <l>And noblest too, had not <corr resp="#LMC">fair</corr> nature <corr
+                           resp="#LMC">stopped</corr> in him,</l>
+                     <l>For which cause this was chosen to inherit<corr resp="#LMC"><pc type="comma"
+                           /></corr></l>
+                     <l><hi rend="italic"><persName>Frederick</persName></hi><corr resp="#LMC"><pc
+                              type="comma">,</pc></corr> the <corr resp="#LMC">younger</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#cle">
+                  <speaker>Cleanthes</speaker>
+                  <lg>
+                     <l><corr resp="#LMC">Doe<pc type="apostrophe"/>s</corr> he use his brother</l>
+                     <l>With that respect and <corr resp="#LMC">honor</corr> that befits him?</l>
+                  </lg>
+               </sp>
+               <sp who="#cam">
+                  <speaker>Camillo</speaker>
+                  <lg>
+                     <l>He is kept privately<corr resp="#LMC"><pc type="parenthesis">(</pc></corr>as
+                        they pretend<corr resp="#LMC"><pc type="parenthesis">)</pc></corr></l>
+                     <l>To give more ease and comfort to his <corr resp="#LMC">sickness<pc
+                              type="period">.</pc></corr></l>
+                     <l>But he has honest servants, the grave <hi rend="italic"
+                              ><persName>Rugio</persName></hi>,</l>
+                     <l>And <corr resp="#LMC">Friar</corr>
+                        <hi rend="italic"><persName>Marco</persName></hi>, that <corr resp="#LMC"
+                           >wait</corr> upon his <corr resp="#LMC">person</corr>,</l>
+                     <l>And in a <corr resp="#LMC">monastery</corr> he lives.</l>
+                  </lg>
+               </sp>
+               <sp who="#men">
+                  <speaker>Menallo</speaker>
+                  <lg>
+                     <l>'Tis full of <corr resp="#LMC">sadness</corr><corr resp="#LMC"><pc
+                              type="comma"/></corr></l>
+                     <l>To see him when he comes to his <corr resp="#LMC">father<pc
+                              type="apostrophe">'</pc>s tomb</corr>,</l>
+                     <l>As once a day that is his <corr resp="#LMC">pilgrimage</corr><corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l><corr resp="#LMC">While</corr> in devotion the <corr resp="#LMC"
+                           >choir</corr> sings an <corr resp="#LMC">anthem<pc type="comma"
+                           >,</pc></corr></l>
+                     <l>How piously he <corr resp="#LMC">kneels</corr>, and like a <corr resp="#LMC"
+                           >virgin</corr></l>
+                     <l>That some <corr resp="#LMC">cross</corr> fate had <corr resp="#LMC"
+                        >cozened<note resp="#LMC" type="gloss">cheated<bibl>OED cozen v.1a</bibl></note></corr> of her <corr resp="#LMC">love</corr>,</l>
+                     <l>Weeps <corr resp="#LMC"><pc type="apostrophe">'</pc></corr>till the <corr
+                           resp="#LMC">stubborn marble</corr> sweats with <corr resp="#LMC"
+                           >pity</corr><corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>And to his <corr resp="#LMC">groans</corr> the whole <corr resp="#LMC">choir
+                           bears</corr> a <hi rend="italic">Chorus</hi>.</l>
+                  </lg>
+               </sp>
+            </div>
+            <div type="scene" n="3" resp="#LMC">
+               <head resp="#LMC">Act 1, Scene 3.</head>
+               <stage type="entrance" place="center" who="#fred #sor #pod"><corr>Enter Frederick<pc
+                        type="comma"/> and Sorano with the cabinet.</corr>
+                  <corr resp="#LMC">Enter Podrano.</corr></stage>
+               <sp who="#pod">
+                  <speaker><corr resp="#LMC">Lords</corr></speaker>
+                  <!-- I don't think Podrano is the speaker here, but instead one of the Lords. Come back to-->
+                  <lg>
+                     <l>So do I too. The King with his contrivers,</l>
+                     <l>This is no place for us.<stage type="exit" place="center" resp="#LMC"
+                           who="#cam #cle #men"><corr>Exit Camillo, Cleanthes, and
+                           Menallo.</corr></stage></l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>This is a <corr resp="#LMC">jewel</corr><corr resp="#LMC"><pc type="period"
+                              >.</pc></corr></l>
+                     <l>Lay it aside, what <corr resp="#LMC">paper's</corr> that?</l>
+                  </lg>
+               </sp>
+               <sp who="#pod">
+                  <speaker>Podrano</speaker>
+                  <lg>
+                     <l>A <corr resp="#LMC">letter</corr>,</l>
+                     <l>But 'tis a <corr resp="#LMC">woman<pc type="apostrophe">'</pc>s</corr>, Sir,
+                        I know by the hand,</l>
+                     <l>And the false authography<corr resp="#LMC"><pc type="em_dash"
+                        >—</pc></corr>they write old Saxon.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>May be her ghostly <corr resp="#LMC">mother<pc type="apostrophe"
+                           >'</pc>s</corr>, that instructs her.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>No, 'tis a <corr resp="#LMC">cousin<pc type="apostrophe">'</pc></corr>, and
+                        came up with a great <corr resp="#LMC">cake</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>What's that?</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>A <corr resp="#LMC">pair</corr> of <corr resp="#LMC">gloves</corr> the <corr
+                           resp="#LMC">Duchess</corr> gave her,</l>
+                     <l>For so the outside <corr resp="#LMC">says</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>That other <corr resp="#LMC">paper</corr>?</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>A <corr resp="#LMC">charm</corr> for the <corr resp="#LMC">toothache</corr>,
+                        here's nothing but Saints and <corr resp="#LMC">crosses</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Look in that box, <corr resp="#LMC">methinks</corr> that should hold
+                           secrets<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                  </lg>
+               </sp>
+               <sp who="#pod">
+                  <speaker>Podrano</speaker>
+                  <lg>
+                     <l>'Tis paint and <corr resp="#LMC">curls</corr> of <corr resp="#LMC"
+                           >hair</corr>, she begins to exercise.</l>
+                     <l>A <corr resp="#LMC">glass</corr> of water too, I would <corr resp="#LMC"
+                           >fain</corr> taste it,</l>
+                     <l>But I am wickedly afraid <corr resp="#LMC">it will</corr> silence me,</l>
+                     <l>Never a <corr resp="#LMC">conduit pipe</corr> to convey this water.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>These are all <corr resp="#LMC">rings</corr>, deaths heads, and such <corr
+                           resp="#LMC">mementoes</corr></l>
+                     <l>Her <corr>grandmother</corr><corr resp="#LMC"><pc type="comma"/></corr> and
+                           <corr resp="#LMC">worm-eaten aunts</corr> left to her,</l>
+                     <l>To tell her what her beauty must <corr resp="#LMC">arrive</corr> at.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>That, that.</l>
+                  </lg>
+               </sp>
+               <sp who="#pod">
+                  <speaker>Podrano</speaker>
+                  <lg>
+                     <l>They are written <corr resp="#LMC">songs<pc type="comma">,</pc></corr> Sir,
+                        to provoke young <corr resp="#LMC">ladies</corr><corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Lords, here's a prayer <corr resp="#LMC">book</corr>, how these agree?</l>
+                     <l>Here's a strange <corr resp="#LMC">union</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>Ever by a safest<corr resp="#LMC"><pc type="comma">,</pc></corr> you have a
+                        julip set to <corr resp="#LMC">cool</corr> the <corr resp="#LMC"
+                           >patient</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Those, those.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>They are <corr resp="#LMC">verses</corr> to the <corr resp="#LMC"
+                           >blessed</corr>
+                        <hi rend="italic"><persName>Evanthe</persName></hi>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Those may discover,</l>
+                     <l><corr resp="#LMC">Read</corr> them out<corr resp="#LMC"><pc type="comma"
+                              >,</pc></corr>
+                        <hi rend="italic"><persName>Soran<corr resp="#LMC"/>o</persName><corr resp="#LMC"><pc
+                                    type="period">.</pc></corr></hi></l>
+                  </lg>
+               </sp>
+               <sp who="#val">
+                  <!-- The letter is centered and in italic. -->
+                  <lg type="letter">
+                     <salute><l>To the <corr resp="#LMC">blessed</corr>
+                           <hi rend="italic"><persName>Evanthe</persName></hi>,</l></salute>
+                     <l><hi rend="dropInt">L</hi><corr resp="#LMC">et</corr> those <corr resp="#LMC"
+                           >complain</corr>, that <corr resp="#LMC">feels love<pc type="apostrophe"
+                              >'</pc>s</corr> cruelty,</l>
+                     <!--the body of the letter following the dropped initial 'L' is rendered in italic-->
+                     <l>And in sad <corr resp="#LMC">legends</corr> write their woes,</l>
+                     <l>With <corr resp="#LMC">roses</corr> gently <corr resp="#LMC"><pc
+                              type="apostrophe"/></corr>has corrected me;</l>
+                     <l>My war is without rage or <corr resp="#LMC">blows</corr>;</l>
+                     <!--indent-->
+                     <l>My <corr>mistress<pc type="apostrophe">'</pc></corr> eyes shine <corr
+                           resp="#LMC">fair</corr> on my desires,</l>
+                     <!--indent-->
+                     <l>And hope springs up inflam'd with her new fires.</l>
+                     <fw type="catch"><hi rend="italic">No</hi></fw>
+                     <fw type="sig">Gggggg</fw>
+                     <pb n="AWFAM-004"/>
+                     <note resp="#formerOwner" place="left">Euanthe &amp; Cassandra <lb/>be
+                        ready</note>
+                     <fw type="pageNum">50</fw>
+                     <cb n="1"/>
+                     <l>No more an <corr resp="#LMC">exile</corr> will I dwell,</l>
+                     <l>With folded <corr resp="#LMC">arms</corr>, and sighs all day,</l>
+                     <l>Reckoning the torments of my hell,</l>
+                     <l>And flinging my sweet <corr resp="#LMC">joys</corr> away;</l>
+                     <!--indent-->
+                     <l>I am call'd home <corr resp="#LMC">again</corr> to quiet peace,</l>
+                     <!--indent-->
+                     <l>My <corr resp="#LMC">mistress</corr> smiles, and all my <corr resp="#LMC">sorrows</corr> cease.</l>
+                     <l>Yet what is living in her eyes?</l>
+                     <l>Or being <corr resp="#LMC">blessed</corr> with her sweet tongue,</l>
+                     <l>If these no other <corr resp="#LMC">joys</corr> imply?</l>
+                     <l>A golden <corr resp="#LMC">give</corr>, a pleasing wrong:</l>
+                     <!--indent-->
+                     <l>To be your <corr resp="#LMC">own</corr> but one <corr resp="#LMC">poor
+                           month</corr>, I'd give</l>
+                     <!--indent-->
+                     <l>My youth, my fortune, and then leave to live.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>This is my <corr resp="#LMC">rival</corr>, that I knew the hand now.</l>
+                  </lg>
+               </sp>
+               <sp who="#sor">
+                  <speaker>Sorano</speaker>
+                  <lg>
+                     <l>I know it, I have <corr resp="#LMC">seen</corr> it, 'tis <hi rend="italic"
+                        ><persName>Valerio</persName>'s</hi>,</l>
+                     <l>That <corr resp="#LMC">hopeful gentleman<pc type="apostrophe">'</pc></corr>
+                        that was brought up with ye,</l>
+                     <l>And by your charge <corr resp="#LMC">nourished</corr> and fed</l>
+                     <l>At the same <corr resp="#LMC">table</corr>, with the same allowance.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>And all this <corr resp="#LMC">courtesy</corr> to <corr resp="#LMC"
+                           >ruin</corr> me?</l>
+                     <l><corr resp="#LMC">Cross</corr> my desires? <corr resp="#LMC">Had</corr>
+                        better have fed <corr resp="#LMC">humbler</corr>,</l>
+                     <l>And stood at greater distance from my fury<corr resp="#LMC"><pc
+                              type="period">.</pc></corr></l>
+                     <l>Go for him quickly, <corr resp="#LMC">find</corr> him instantly,</l>
+                     <l><corr resp="#LMC">While</corr> my impatient heart swells high with
+                           choller<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Better have <corr resp="#LMC">loved despair</corr>, and safer <corr
+                           resp="#LMC">kissed</corr> her.<stage type="exit" place="right"
+                           resp="#LMC" who="#sor #pod">Exit <corr>Sorano and
+                        Podrano</corr>.</stage></l>
+                  </lg>
+               </sp>
+               <note resp="#formerOwner" place="left">[entrance symbol]</note>
+               <stage type="entrance" place="center" who="#eva #cass">Enter Evanthe and
+                  Cassandra.</stage>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Thou old weak <corr resp="#LMC">fool</corr>, dost thou know to what end,</l>
+                     <l>To what betraying end he got this <corr resp="#LMC">casket</corr>?</l>
+                     <l><corr resp="#LMC">Dare</corr> thou deliver him without my <corr resp="#LMC"
+                           >ring</corr>?</l>
+                     <l>Or a command from mine own mouth? that <corr resp="#LMC">cabinet</corr></l>
+                     <l>That holds my heart, you <corr resp="#LMC">inconsiderate ass</corr>,</l>
+                     <l>Thou <corr resp="#LMC">brainless</corr><corr resp="#LMC">idiot</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#cass">
+                  <speaker>Cassandra</speaker>
+                  <lg>
+                     <l>I saw you go with him,</l>
+                     <l>At their first word commit your person to him,</l>
+                     <l>And made no scruple<corr resp="#LMC"><pc type="period">.</pc></corr>
+                        <corr resp="#LMC">He</corr> is your brother<corr resp="#LMC"><pc
+                              type="apostrophe">'</pc></corr>s <corr>gentleman</corr>,</l>
+                     <l>And for any thing I know, an honest man<corr resp="#LMC"><pc type="period"
+                              >.</pc></corr></l>
+                     <l>And might not I upon the same security deliver him a box?</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>A <corr resp="#LMC">bottlehead<note resp="#LMC" type="gloss">idiot; fool; blockhead<bibl>OED bottle-head n.2</bibl></note></corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>You shall have cause to chafe, as I will handle it.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>I had rather thou <corr>had</corr> delivered me to <corr resp="#LMC"
+                           >pirates</corr>,</l>
+                     <l><corr resp="#LMC">Betrayed</corr> me to uncurable diseases,</l>
+                     <l>Hung up my <corr resp="#LMC">picture</corr> in a <corr resp="#LMC"
+                           >marketplace</corr>,</l>
+                     <l>And sold me to <corr resp="#LMC">wild</corr> bawds.</l>
+                  </lg>
+                  <note resp="#formerOwner" place="right">vale: &amp; podra <lb/><hi
+                        rend="underline">be ready</hi></note>
+               </sp>
+               <sp who="#cass">
+                  <speaker>Cassandra</speaker>
+                  <lg>
+                     <l>As I take it<corr resp="#LMC"><pc type="comma">,</pc></corr> Madam,</l>
+                     <l>Your <corr resp="#LMC">maidenhead<note resp="#LMC" type="gloss">virginity; hymen<bibl>OED maidenhead n.1a</bibl></note> lies</corr> not in that <corr resp="#LMC"
+                           >cabinet</corr><corr resp="#LMC"><pc type="semicolon">;</pc></corr></l>
+                     <l>You have a <corr resp="#LMC">closet</corr>, and you keep the key too,</l>
+                     <l>Why are you <corr>vexed</corr> thus?</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>I could curse thee wickedly,</l>
+                     <l>And wish thee more deformed <corr resp="#LMC">than</corr> age can make
+                           thee<corr resp="#LMC"><pc type="colon">:</pc></corr></l>
+                     <l><corr resp="#LMC">Perpetual</corr> hunger, and no teeth to
+                           <corr>satisfy</corr> it,</l>
+                     <l><corr resp="#LMC">Weight</corr> on thee still, nor sleep be found to ease
+                           it<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Those hands that gave the <corr resp="#LMC">casket</corr>, may the <corr
+                           resp="#LMC">palsy</corr></l>
+                     <l><corr resp="#LMC">Forever</corr> make <corr resp="#LMC">unuseful</corr>,
+                        even to feed thee<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Long winters, that thy bones may <corr resp="#LMC">turn</corr> to <corr
+                           resp="#LMC">icicles</corr></l>
+                     <l>No Hell can thaw <corr resp="#LMC">again</corr>, inhabit by thee.</l>
+                     <l>Is thy care like thy body, all on <corr resp="#LMC">crookedness</corr>?</l>
+                     <l>How scurvily thou criest now? <corr resp="#LMC">Like</corr> a drunkard,</l>
+                     <l><corr resp="#LMC">I<pc type="apostrophe">'</pc>ll</corr> have as pure <corr
+                           resp="#LMC">tears</corr> from a <corr resp="#LMC">dirty</corr> spout<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Do, <corr resp="#LMC">swear</corr> thou didst this ignorantly, <corr
+                           resp="#LMC">swear</corr> it,</l>
+                     <l><corr resp="#LMC">Swear</corr> and be <corr resp="#LMC">damned</corr>,
+                           thou<corr resp="#LMC"> half</corr> witch.</l>
+                  </lg>
+               </sp>
+               <sp who="#cass">
+                  <speaker>Cassandra</speaker>
+                  <lg>
+                     <l>These are fine words, well Madam, Madam.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>'Tis not well thou mummy,</l>
+                     <l>'Tis impudently, basely done, thou <corr resp="#LMC">dirty</corr><pc
+                           type="dash">—</pc></l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Has your young sanctity done railing, Madam,</l>
+                     <l>Against your innocent <corr resp="#LMC">squire</corr>? <corr resp="#LMC"
+                           >Do</corr> you see this <corr resp="#LMC">sonnet</corr>?</l>
+                     <l>This loving <corr resp="#LMC">script</corr>? <corr resp="#LMC">Do</corr> you
+                        know from <corr resp="#LMC">where</corr> it came too?</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>I do, and dare avouch it pure and honest.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>You have private <corr resp="#LMC">visitors</corr>, my noble <corr
+                           resp="#LMC">lady</corr>,</l>
+                     <l>That in sweet numbers court your goodly <corr resp="#LMC"
+                        >virtues</corr>,</l>
+                     <l>And to the height of adoration.</l>
+                  </lg>
+               </sp>
+               <cb n="2"/>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Well Sir,</l>
+                     <l>There's neither <corr resp="#LMC">heresy</corr> nor <corr resp="#LMC"
+                           >treason</corr> in it.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>A <corr resp="#LMC">prince</corr> may beg at the <corr resp="#LMC">door <pc
+                              type="semicolon"/></corr>
+                        <corr resp="#LMC">while</corr> these feast with ye<corr resp="#LMC"><pc
+                              type="period">.</pc></corr></l>
+                     <l>A <corr resp="#LMC">favor</corr> or a grace, from such as I am.</l>
+                     <note resp="#formerOwner" place="left">[entrance symbol]</note>
+                     <stage type="entrance" place="center" who="#val #pod">Enter Valerio<corr
+                           resp="#LMC"><pc type="comma"/></corr> and Podrano.</stage>
+                     <note resp="#formerOwner" place="left">[entrance symbol]</note>
+                     <l>Course, common things. You are welcome; pray come <corr resp="#LMC"
+                           >near</corr>, Sir<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Do you know this paper?</l>
+                  </lg>
+               </sp>
+               <sp who="#val">
+                  <speaker>Valerio</speaker>
+                  <lg>
+                     <l>I am <corr resp="#LMC">betrayed<pc type="exclamation_mark">!</pc></corr> I
+                           do<corr resp="#LMC"><pc type="comma">,</pc></corr> Sir,</l>
+                     <l>'Tis mine, my hand and heart, if I die<note resp="#LMC" type="gloss">achieve sexual orgasm<bibl>OED die v.7d</bibl></note> for her,</l>
+                     <l>I am <corr resp="#LMC">her</corr>
+                        <corr resp="#LMC">martyr</corr><corr resp="#LMC"><pc type="em_dash"
+                           >—</pc></corr><corr resp="#LMC">love <pc type="comma"/>and time</corr>
+                        shall <corr resp="#LMC">honor</corr> me.</l>
+                  </lg>
+               </sp>
+               <sp who="#cass">
+                  <speaker>Cassandra</speaker>
+                  <lg>
+                     <l>You <corr resp="#LMC">saucy</corr> Sir, that came in my <corr resp="#LMC"
+                           >Lady's</corr> name,</l>
+                     <l>For her guilt <corr resp="#LMC">cabinet</corr>, you cheating Sir too,</l>
+                     <l>You scurvy Usher, with as scurvy <corr resp="#LMC">legs</corr>,</l>
+                     <l>And a worse face, thou <corr resp="#LMC">poor</corr> base hanging
+                        holder,</l>
+                     <l>How <corr resp="#LMC">dare</corr> thou come to me with a <corr resp="#LMC"
+                           >lie</corr> in <corr resp="#LMC">your</corr> mouth?</l>
+                     <l>An impudent <corr resp="#LMC">lie</corr>?</l>
+                  </lg>
+               </sp>
+               <sp who="#pod">
+                  <speaker>Podrano</speaker>
+                  <lg>
+                     <l>Hollow, good <hi rend="italic"><persName>Jill</persName></hi>, you
+                        hobble.</l>
+                  </lg>
+               </sp>
+               <sp who="#cass">
+                  <speaker>Cassandra</speaker>
+                  <lg>
+                     <l>A stinking <corr resp="#LMC">lie</corr>, more stinking <corr resp="#LMC"
+                           >than</corr> the teller,</l>
+                     <l>To play the <corr resp="#LMC">pilfering</corr> knave<note resp="#LMC" type="gloss">dishonest, unprincipled man<bibl>OED knave n.3a</bibl></note>, there have been
+                        rascals</l>
+                     <l>Brought up to fetch and carry like your <corr resp="#LMC"
+                        >worship</corr>,</l>
+                     <l>That have been <corr resp="#LMC">hanged</corr> for <corr resp="#LMC"
+                           >less</corr>, <corr>whipped</corr> there are daily<corr resp="#LMC"><pc
+                              type="period">.</pc></corr></l>
+                     <l>And if the Law will do me right<pc type="dash">—</pc></l>
+                  </lg>
+               </sp>
+               <sp who="#pod">
+                  <speaker>Podrano</speaker>
+                  <lg>
+                     <l>What then<corr resp="#LMC"><pc type="comma">,</pc></corr> old <corr
+                           resp="#LMC">maggot</corr>?</l>
+                  </lg>
+               </sp>
+               <sp who="#cass">
+                  <speaker>Cassandra</speaker>
+                  <lg>
+                     <l>Thy mother was carted<note resp="#LMC" type="gloss">carried away unceremoniously<bibl>OED cart v.1e</bibl></note> younger; <corr resp="#LMC">I<pc type="apostrophe"
+                              >'</pc>ll</corr> have thy hide,</l>
+                     <l>Thy mangy hide, <corr resp="#LMC">embroidered</corr> with a dog-whip,</l>
+                     <l>As it is now with potent <corr resp="#LMC">pox</corr>, and thicker.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>Peace, good antiquity, <corr resp="#LMC">I<pc type="apostrophe"
+                           >'</pc>ll</corr> have your bones else</l>
+                     <l>Ground into <corr resp="#LMC">gunpowder</corr> to shoot at <corr resp="#LMC"
+                           >cats</corr> with<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>One word more, and <corr resp="#LMC">I<pc type="apostrophe">'</pc>ll</corr>
+                        blanch thee like an <corr resp="#LMC">almond</corr>,</l>
+                     <l>There's no such cure for the she-falling-<corr resp="#LMC"
+                        >sickness</corr>,</l>
+                     <l>As the powder of a dried bawd<corr resp="#LMC"><pc type="apostrophe"
+                           >'</pc></corr>s skin, be silent,</l>
+                     <l>You are very <corr resp="#LMC">prodigal</corr> of your service here,
+                        Sir,</l>
+                     <l>Of your life more it seems.</l>
+                  </lg>
+               </sp>
+               <sp who="#val">
+                  <speaker>Valerio</speaker>
+                  <lg>
+                     <l>I repent neither,</l>
+                     <l>Because Your Grace shall understand it comes</l>
+                     <l>From the best part of love, my pure affection,</l>
+                     <l>And kindled with chaste flame, I will not fly from it,</l>
+                     <l>If it be error to desire to marry,</l>
+                     <l>And marry her that sanctity would dote on,</l>
+                     <l>I have done <corr resp="#LMC">amiss</corr>; if it be a <corr resp="#LMC"
+                           >treason</corr></l>
+                     <l>To graft my <corr resp="#LMC">soul</corr> to <corr resp="#LMC"
+                        >virtue</corr>, and to grow there,</l>
+                     <l>To love the tree that <corr resp="#LMC">bears</corr> such <corr resp="#LMC"
+                           >happiness</corr>;</l>
+                     <l>Conceive me, Sir, this fruit was <corr resp="#LMC">never</corr>
+                        forbidden;</l>
+                     <l><corr resp="#LMC">No</corr>, to desire to taste too, I am <corr resp="#LMC"
+                           >traitor</corr><corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Had you but plants enough of this <corr resp="#LMC">blessed tree</corr>,
+                        Sir,</l>
+                     <l>Set round about your Court to <corr resp="#LMC">beautify</corr> it,</l>
+                     <l>Deaths twice so many, to dismay the aproachers,</l>
+                     <l>The ground would scarce <corr resp="#LMC">yield</corr> graves to noble <corr
+                           resp="#LMC">lovers</corr><pc type="period">.</pc></l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>'Tis well <corr resp="#LMC">maintained</corr><corr resp="#LMC"><pc
+                              type="semicolon">;</pc></corr> you wish and pray to fortune,</l>
+                     <l>Here in your <corr resp="#LMC">sonnet</corr>, and she has heard your
+                        prayers,</l>
+                     <l>So much you dote upon your <corr resp="#LMC">own</corr> undoing<corr
+                           resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>But one <corr resp="#LMC">month</corr> to <corr resp="#LMC">enjoy</corr> her
+                        as your wife,</l>
+                     <l>Though at the expiring of that time you die for't.</l>
+                  </lg>
+               </sp>
+               <sp who="#val">
+                  <speaker>Valerio</speaker>
+                  <lg>
+                     <l>I could wish many, many ages<corr resp="#LMC"><pc type="comma">,</pc></corr>
+                        Sir,</l>
+                     <l>To grow as old as time in her <corr resp="#LMC">embraces</corr>,</l>
+                     <l>If <corr resp="#LMC">Heaven</corr> would grant it, and you smile upon
+                           it<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>But if my choice were two <corr resp="#LMC">hours</corr>, and then
+                        perish,</l>
+                     <l>I would not pull my heart back.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>You have your wish,</l>
+                     <l><corr resp="#LMC">Tomorrow</corr> I will see you nobly married,</l>
+                     <l>Your <corr resp="#LMC">month</corr> take out in all content and
+                           pleasure<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>The first day of the following <corr resp="#LMC">month</corr> you <corr
+                           resp="#LMC">die</corr>
+                        <corr resp="#LMC">for it <pc type="period">.</pc></corr></l>
+                     <l><corr resp="#LMC">Kneel not<pc type="comma">,</pc></corr>, not all your
+                        prayers can divert me<corr resp="#LMC"><pc type="period">.</pc></corr></l>
+                     <l>Now <corr resp="#LMC">mark</corr> your sentence, mark it<corr resp="#LMC"
+                              ><pc type="comma">, scornful</pc></corr> Lady,</l>
+                     <l>If when <hi rend="italic"><persName>Valerio's</persName></hi> dead, within
+                        twelve <corr resp="#LMC">hours</corr>,</l>
+                     <l>For <corr resp="#LMC">there<pc type="apostrophe">'</pc>s</corr> your latest
+                        time, you <corr resp="#LMC">find</corr> not out</l>
+                     <l>Another husband on the same condition</l>
+                     <l>To marry you <corr resp="#LMC">again</corr>, you <corr resp="#LMC">die
+                           yourself</corr> too.</l>
+                  </lg>
+               </sp>
+               <fw type="catch"><hi rend="italic">Evan.</hi></fw>
+               <pb n="AWFAM-005"/>
+               <fw type="pageNum">51</fw>
+               <cb n="1"/>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Now you are <corr resp="#LMC">merciful</corr>, I thank your Grace.</l>
+                  </lg>
+               </sp>
+               <sp who="#fred">
+                  <speaker>Frederick</speaker>
+                  <lg>
+                     <l>If when you are married, you but seek to <corr resp="#LMC">escape</corr></l>
+                     <l>Out of the <corr resp="#LMC">Kingdom</corr>, you, or she, or both,</l>
+                     <l>Or to infect men<corr resp="#LMC"><pc type="apostrophe">'</pc></corr>s minds
+                        with hot commotions,</l>
+                     <l>You <corr resp="#LMC">die</corr> both instantly<corr resp="#LMC"><pc
+                              type="em_dash">—</pc></corr>will you love me now<corr resp="#LMC"><pc
+                              type="comma">,</pc></corr> Lady?</l>
+                     <l>My tale will now be heard, but now I <corr resp="#LMC">scorn</corr>
+                           ye.<stage type="exit" place="right" resp="#LMC"><corr>
+                           Exeunt.</corr>.</stage></l>
+                  </lg>
+               </sp>
+               <stage type="modifier" place="center" who="#val #eva"><hi rend="roman">Manent</hi><corr
+                        resp="#LMC"><pc type="comma"/></corr> Valerio<corr><pc type="comma"
+                     /></corr>
+                  <hi rend="roman">and</hi> Evanthe.</stage>
+            </div>
+            <div type="scene" n="4" resp="#LMC">
+               <head resp="#LMC">Act 1, Scene 4.</head>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>Is our <corr resp="#LMC">fair</corr> love, our honest, our <corr resp="#LMC"
+                           >entire</corr>,</l>
+                     <l>Come to this hazard?</l>
+                  </lg>
+               </sp>
+               <sp who="#val">
+                  <speaker>Valerio</speaker>
+                  <lg>
+                     <l>'Tis a noble one, and I am much in love with malice for it,</l>
+                     <l>Envy could not have studied me <corr resp="#LMC">away</corr>,</l>
+                     <l>Nor fortune pointed out a path to <corr resp="#LMC">honor</corr>,</l>
+                     <l>Straighter and nobler, if she had her eyes<corr resp="#LMC"><pc
+                              type="period">.</pc></corr></l>
+                     <l>When I have once <corr resp="#LMC">enjoyed</corr> my sweet <hi rend="italic"
+                              ><persName>Evanthe</persName></hi>,</l>
+                     <l>And <corr resp="#LMC">blessed</corr> my youth with her most <corr
+                           resp="#LMC">dear</corr>
+                        <corr resp="#LMC">embraces</corr>,</l>
+                     <l>I have done my journey here, my day is out,</l>
+                     <l>All that the world has else is foolery,</l>
+                     <l><corr resp="#LMC">Labor</corr>, and <corr resp="#LMC">loss</corr> of
+                           time<corr resp="#LMC"><pc type="em_dash">—</pc></corr>what should I live
+                        for?</l>
+                     <l>Think but <corr resp="#LMC">man<pc type="apostrophe">'</pc>s</corr> life a
+                           <corr resp="#LMC">month</corr>, and we are happy.</l>
+                     <l>I would not have my <corr resp="#LMC">joys</corr> grow old for <corr
+                           resp="#LMC">anything<pc type="period">.</pc></corr></l>
+                     <l>A paradise, as thou art my <hi rend="italic"
+                           ><persName>Evanthe</persName></hi>,</l>
+                     <note resp="#formerOwner" place="right">Tony with <lb/>a urinall</note>
+                     <l>Is only made to wonder at a little,</l>
+                     <l>Enough for <corr resp="#LMC">human</corr> eyes, and then to wander from.</l>
+                     <l>Come<corr resp="#LMC"><pc type="comma">,</pc></corr> do not weep, sweet, you
+                           <corr resp="#LMC">dishonor</corr> me<corr resp="#LMC"><pc type="period"
+                              >.</pc></corr></l>
+                     <l>Your <corr resp="#LMC">tears</corr> and <corr resp="#LMC">griefs</corr> but
+                        question my ability,</l>
+                     <l>Whether I dare <corr resp="#LMC">die</corr>: Do you love <corr resp="#LMC"
+                           >entirely</corr>?</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l>You know I do.</l>
+                  </lg>
+               </sp>
+               <sp who="#val">
+                  <speaker>Valerio</speaker>
+                  <lg>
+                     <l>Then grudge not my felicity.</l>
+                  </lg>
+               </sp>
+               <sp who="#eva">
+                  <speaker>Evanthe</speaker>
+                  <lg>
+                     <l><corr resp="#LMC">I<pc type="apostrophe">'</pc>ll</corr> to the <corr
+                           resp="#LMC">Queen</corr>.</l>
+                  </lg>
+               </sp>
+               <sp who="#val">
+                  <speaker>Valerio</speaker>
+                  <lg>
+                     <l>Do <corr resp="#LMC">anything</corr> that's honest,</l>
+                     <l>But if you sue<note resp="#LMC" type="gloss">pursue</note> to him in death, I hate you.</l>
+                  </lg>
+               </sp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
