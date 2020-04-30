@@ -143,6 +143,8 @@
         </front>
         <body>
             <div type="play" xml:id="seaVoyage">
+                <pb n="TSV-001"
+                    facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4815/default.jpg"/>
                 <fw type="pageNum">1</fw>
                 <head>
                     <title>THE SEA VOYAGE</title>
@@ -153,7 +155,6 @@
                             <hi rend="italic">Actus Primus—Scaena Prima.</hi>
                         </head>
                         <!--em dash used to represent several-character-long dash in text title-->
-                        <fw type="pageNum">1</fw>
                         <cb n="1"/>
                         <stage type="setting" place="center">A Tempe&#383;t, Thunder and
                             Lightning.</stage>
@@ -464,6 +465,8 @@
                                 <l>If cur&#383;es could redeeme me? how to hate ye?</l>
                                 <fw type="sig">Aaaaa</fw>
                                 <fw type="catch">You</fw>
+                                <pb n="TSV-002"
+                                    facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4816/default.jpg"/>
                                 <fw type="pageNum">2</fw>
                                 <cb n="1"/>
                                 <l>You forc't me from my quiet, from my friends;</l>
@@ -839,6 +842,8 @@
                             <lg>
                                 <l>A &#383;trong young man Sir, with a hand&#383;ome woman.</l>
                                 <fw type="catch">Hang-</fw>
+                                <pb n="TSV-003"
+                                    facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4817/default.jpg"/>
                                 <fw type="pageNum">3</fw>
                                 <cb n="1"/>
                                 <l>Hanging about his Neck.</l>
@@ -1219,6 +1224,8 @@
                         <fw type="catch">
                             <hi rend="italic">Alb.</hi>
                         </fw>
+                        <pb n="TSV-004"
+                            facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4818/default.jpg"/>
                         <fw type="pageNum">4</fw>
                         <cb n="1"/>
                         <sp xml:id="sp123">
@@ -1672,6 +1679,8 @@
                             <lg>
                                 <l>How the wind drives her,</l>
                                 <fw type="catch">As</fw>
+                                <pb n="TSV-005"
+                                    facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4819/default.jpg"/>
                                 <fw type="pageNum">5</fw>
                                 <cb n="1"/>
                                 <l>As if it vied to force her from our furies?</l>
@@ -2041,6 +2050,8 @@
                         </lg>
                     </sp>
                     <fw type="catch"><hi rend="italic">Amint.</hi> Well</fw>
+                    <pb n="TSV-006"
+                        facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4820/default.jpg"/>
                     <fw type="pageNum">6</fw>
                     <cb n="1"/>
                     <sp xml:id="sp216">
@@ -2371,6 +2382,8 @@
                     <fw type="catch">
                         <hi rend="italic">Cro.</hi>
                     </fw>
+                    <pb n="TSV-007"
+                        facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4821/default.jpg"/>
                     <fw type="pageNum">7</fw>
                     <cb n="1"/>
                     <sp xml:id="sp251">
@@ -2733,6 +2746,8 @@
                             <l>Are ye mad?</l>
                             <l>Can no per&#383;wa&#383;ion alter ye? &#383;uppo&#383;e</l>
                             <fw type="catch">You</fw>
+                            <pb n="TSV-008"
+                                facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4822/default.jpg"/>
                             <fw type="pageNum">8</fw>
                             <cb n="1"/>
                             <l>You have my &#383;uffrage to your &#383;ute;</l>
@@ -3118,6 +3133,8 @@
                     <fw type="catch">
                         <hi rend="italic">Aminta</hi>
                     </fw>
+                    <pb n="TSV-009"
+                        facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4823/default.jpg"/>
                     <fw type="pageNum">9</fw>
                     <cb n="1"/>
                     <sp xml:id="sp339">
@@ -3514,9 +3531,8 @@
                         <speaker>Tib.</speaker>
                         <lg>
                             <l><corr resp="#formerOwner" rend="underline"><hi resp="#formerOwner"
-                                        rend="strikethrough">Sir</hi></corr>, not within forty foot
-                                of this food,</l>
-                            <note resp="#formerOwner" place="right" rend="underline">Stir</note>
+                                rend="strikethrough">Sir</hi><note resp="#formerOwner" place="right" rend="underline">Stir</note>
+                            </corr>, not within forty foot of this food,</l>
                             <l>If you do dogs!</l>
                         </lg>
                     </sp>
@@ -3557,6 +3573,8 @@
                                     rend="turnover"/>dogs;</l>
                             <fw type="sig">Bbbbb</fw>
                             <fw type="catch">If</fw>
+                            <pb n="TSV-010"
+                                facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4824/default.jpg"/>
                             <fw type="pageNum">10</fw>
                             <cb n="1"/>
                             <l>If you do, i'le cut your fingers; friends</l>
@@ -3785,8 +3803,7 @@
                             <cb n="2"/>
                             <l>That you refus'd my councell, may it add</l>
                             <l>To your afflictions, that you were <corr resp="#formerOwner"
-                                    rend="underline">forward</corr>;</l>
-                            <note resp="#formerOwner" place="right">forewarnd</note>
+                                rend="underline">forward</corr><note resp="#formerOwner" place="right">forewarnd</note>;</l>
                             <l>Yet leap'd into the Gulfe of your misfortunes,</l>
                             <l>But have your wi&#383;hes.</l>
                         </lg>
@@ -3853,8 +3870,7 @@
                         <lg>
                             <l>VVe lay 'em down</l>
                             <l>Mo&#383;t gladly <corr resp="#formerOwner" rend="underline"
-                                    >art</corr> your feet.</l>
-                            <note resp="#formerOwner" place="right">at</note>
+                                >art</corr><note resp="#formerOwner" place="right">at</note> your feet.</l>
                         </lg>
                     </sp>
                     <sp xml:id="sp431">
@@ -3933,6 +3949,8 @@
                             <l>The &#383;ullen <name>Saturue</name> had predominance</l>
                             <l>At your nativity, a malignant planet,</l>
                             <fw type="catch">And</fw>
+                            <pb n="TSV-011"
+                                facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4825/default.jpg"/>
                             <fw type="pageNum">11</fw>
                             <cb n="1"/>
                             <l>And if not qualified by a &#383;weet conjunction</l>
@@ -4329,6 +4347,8 @@
                             <l>To undergoe the full weight of your di&#383;plea&#383;ure.</l>
                             <fw type="sig">Bbbbb2</fw>
                             <fw type="catch">And</fw>
+                            <pb n="TSV-012"
+                                facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4826/default.jpg"/>
                             <fw type="pageNum">12</fw>
                             <cb n="1"/>
                             <l>And that they may have &#383;ence to feel the torments</l>
@@ -4676,6 +4696,8 @@
                             <lg>
                                 <l>Your are angry mother, and ye are old too,</l>
                                 <fw type="catch">For-</fw>
+                                <pb n="TSV-013"
+                                    facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4827/default.jpg"/>
                                 <fw type="pageNum">13</fw>
                                 <cb n="1"/>
                                 <l>Forgetting what men are: but we &#383;hall temper ye.</l>
@@ -5058,6 +5080,8 @@
                                 <l>O blind fortune;</l>
                                 <l>Yet happy thus far, I &#383;hall live to &#383;ee him,</l>
                                 <fw type="catch">In</fw>
+                                <pb n="TSV-014"
+                                    facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4828/default.jpg"/>
                                 <fw type="pageNum">14</fw>
                                 <cb n="1"/>
                                 <l>In what &#383;trange de&#383;olation lives he here now?</l>
@@ -5463,6 +5487,8 @@
                                 <l>Or are you weary of the charge ye are at?</l>
                                 <l>Turn us abroad again, let's jog Ladies;</l>
                                 <fw type="catch">Wee</fw>
+                                <pb n="TSV-015"
+                                    facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4829/default.jpg"/>
                                 <fw type="pageNum">15</fw>
                                 <cb n="1"/>
                                 <l>We are gro&#383;&#383;e, and cour&#383;e, unfit for your
@@ -5941,6 +5967,8 @@
                         <fw type="catch">
                             <hi rend="italic">Mor.</hi>
                         </fw>
+                        <pb n="TSV-016"
+                            facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4830/default.jpg"/>
                         <fw type="pageNum">16</fw>
                         <cb n="1"/>
                         <sp xml:id="sp682">
@@ -6346,6 +6374,8 @@
                                 <l>Open the doores too of the &#383;everall pri&#383;ons,</l>
                                 <l>And give all free entrance into this room.</l>
                                 <fw type="catch">Undi&#383;-</fw>
+                                <pb n="TSV-017"
+                                    facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4831/default.jpg"/>
                                 <fw type="pageNum">25</fw>
                                 <cb n="1"/>
                                 <l>Undi&#383;cover'd I can here marke all. <stage type="entrance"
@@ -6646,6 +6676,8 @@
                                 <l>Our &#383;hip by this Wine.</l>
                                 <fw type="sig">Ccccc</fw>
                                 <fw type="catch">And</fw>
+                                <pb n="TSV-018"
+                                    facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4832/default.jpg"/>
                                 <fw type="pageNum">18</fw>
                                 <cb n="1"/>
                                 <l>And tho&#383;e the rogues that &#383;tole her,</l>
@@ -6955,6 +6987,8 @@
                         <fw type="catch">
                             <hi rend="italic">Cro.</hi>
                         </fw>
+                        <pb n="TSV-019"
+                            facs="https://digital.libraries.psu.edu/digital/api/singleitem/image/emblem/4833/default.jpg"/>
                         <fw type="pageNum">19</fw>
                         <cb n="1"/>
                         <sp xml:id="sp792">
